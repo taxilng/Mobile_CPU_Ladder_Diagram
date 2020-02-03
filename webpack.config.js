@@ -4,6 +4,10 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
     entry: './src/index.js',
+    devtool: 'inline-source-map',
+    devServer: {
+        contentBase: './dist'
+    },
     output: {
         filename: 'bundle.[hash].js',
         path: path.resolve(__dirname, 'dist')
@@ -50,7 +54,7 @@ module.exports = {
                         }
                     }
                 ]
-            },
+            }
         ]
     },
     //插件
@@ -66,6 +70,6 @@ module.exports = {
                 collapseWhitespace: true, // 删除空白符与换行符
                 minifyCSS: true // 压缩内联css
             }
-        }),
+        })
     ]
 }
