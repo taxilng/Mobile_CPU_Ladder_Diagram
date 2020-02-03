@@ -1,3 +1,6 @@
+import "./base.css";
+import './img/t_bg.png'
+import './img/top_img_bg.png'
 var cpuData = [
     ['', '', '', '', '', '', '', '', 'A13', '', ''],
     ['', '', '', '', '骁龙865', '', '', '', '', '', ''],
@@ -247,7 +250,6 @@ var cpuData = [
     ['', '', '', '', '', '', 'MT6516', '', '', '', '']
 ]
 try {
-    alert(111)
     var newcpuData = cpuData
         .map((v) =>
             v.map((x, i, arr) => {
