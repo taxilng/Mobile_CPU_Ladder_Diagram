@@ -274,7 +274,7 @@ try {
     var content = document.querySelectorAll('td.content')
     for (var key of content) {
         if (key.textContent.includes('骁龙439')) {
-            console.log(key)
+            // console.log(key)
             key.classList.add('newCpu')
         }
     }
