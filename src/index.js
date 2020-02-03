@@ -2,6 +2,9 @@ import "./base.css";
 import './img/t_bg.png'
 import './img/top_img_bg.png'
 import 'core-js/features/array/flat';
+// import 'core-js';
+// import 'core-js/stable';
+// import "regenerator-runtime/runtime";
 var cpuData = [
     ['', '', '', '', '', '', '', '', 'A13', '', ''],
     ['', '', '', '', '骁龙865', '', '', '', '', '', ''],
