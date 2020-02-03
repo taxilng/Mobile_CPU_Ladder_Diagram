@@ -1,6 +1,7 @@
 import "./base.css";
 import './img/t_bg.png'
 import './img/top_img_bg.png'
+import 'core-js/features/array/flat';
 var cpuData = [
     ['', '', '', '', '', '', '', '', 'A13', '', ''],
     ['', '', '', '', '骁龙865', '', '', '', '', '', ''],
