@@ -1,0 +1,56 @@
+{
+  "name": "eslint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "cp .hooks/* .git/hooks/",
+    "build": "webpack --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taxilng/baseCode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/taxilng/baseCode/issues"
+  },
+  "homepage": "https://github.com/taxilng/baseCode#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.4.2",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^1.1.3",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "@stomp/stompjs": "^5.0.2",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-transform-decorators": "^6.24.1",
+    "co": "^4.6.0",
+    "dayjs": "^1.7.7",
+    "eslint-plugin-html": "^3.2.2",
+    "flv.js": "^1.5.0",
+    "jquery": "^3.4.1",
+    "lodash": "^4.17.15",
+    "stompjs": "^2.3.3",
+    "superagent": "^4.0.0-beta.5",
+    "vconsole": "^3.2.0",
+    "verto": "^0.1.1",
+    "websocket": "^1.0.28"
+  }
+}
