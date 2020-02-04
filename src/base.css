@@ -21,10 +21,10 @@ td {
     text-align: center;
 }
 td.content {
-    border: 1px solid #fff;
+    border: 1px solid #eceded;
 }
 tr {
-    background: #eceded;
+    /* background: #eceded; */
 }
 tr:hover {
     background: #e7f4fe;
