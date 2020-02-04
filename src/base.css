@@ -16,7 +16,7 @@ td {
 }
 tr,
 td {
-    padding: 7px 0px;
+    padding: 2px 0px;
     height: 22px;
     text-align: center;
 }
@@ -114,4 +114,7 @@ a:ative {
 .newCpu {
     color: white;
     background: #c77e7e;
+}
+.unlisted {
+    color: #124dbd;
 }
