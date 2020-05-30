@@ -54,7 +54,7 @@
     "eslint-plugin-html": "^3.2.2",
     "flv.js": "^1.5.0",
     "jquery": "^3.4.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.13",
     "stompjs": "^2.3.3",
     "superagent": "^4.0.0-beta.5",
     "vconsole": "^3.2.0",
