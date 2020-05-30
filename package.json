@@ -8,6 +8,7 @@
     "postinstall": "cp .hooks/* .git/hooks/",
     "build": "webpack --mode development",
     "start": "webpack-dev-server --open",
+    "dev": "webpack-dev-server --open",
     "watch": "webpack --watch"
   },
   "repository": {

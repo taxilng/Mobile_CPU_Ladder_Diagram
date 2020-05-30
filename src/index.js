@@ -7,19 +7,19 @@ import 'core-js/features/array/flat'
 // import 'core-js/stable';
 // import "regenerator-runtime/runtime";
 var cpuData = [
-    ['', '', '', '', '', '', '', '', 'A12X', '', ''],
+    ['', '', '', '', '', '', '', '', 'A12Z/A12X', '', ''],
     ['', '', '', '', '', '', '', '', 'A13', '', ''],
     ['', '', '', '', '骁龙865', '', '', '', 'A12', '', ''],
     ['', '', '', '', '', '', '天玑1000', '麒麟990', '', '', ''],
     ['', '', '', '', '骁龙855 Plus', '', '', '', '', '', ''],
-    ['', '', '', '', '骁龙855', '', '', '', 'A10X/A11', '', ''],
-    ['', '', '', '', '', '', '', '<span class="newCpu">麒麟985/麒麟820</span>/麒麟980', '', '', ''],
-    ['', '', '', '', '骁龙845', 'Exynos 9820', '天玑1000L', '', '', '', ''],
-    ['', '', '', '骁龙765/765G', '', '', '', '麒麟810', 'A9X/A10', '', ''],
+    ['', '', '', '', '骁龙855', '', '天玑1000L', '', 'A10X/A11', '', ''],
+    ['', '', '', '', '', '', '天玑820', '麒麟985/麒麟820/麒麟980', '', '', ''],
+    ['', '', '', '骁龙768G', '骁龙845', 'Exynos 9820', '', '', '', '', ''],
+    ['', '', '', '骁龙765/765G', '', '', '天玑800', '麒麟810', 'A9X/A10', '', ''],
     ['', '', '', '骁龙730/730G', '骁龙835', 'Exynos 9810', 'Helio G90T', '', '', '', ''],
-    ['', '', '', '', '', '', '', '麒麟970', '', '', ''],
+    ['', '', '', '', '', 'Exynos 980', '', '麒麟970', '', '', ''],
     ['', '', '', '骁龙712', '', 'Exynos 8895', '', '', '', '', ''],
-    ['', '', '', '骁龙710', '', '', '', '麒麟960', 'A9', '', ''],
+    ['', '', '', '骁龙710', '', '', 'Helio G85', '麒麟960', 'A9', '', ''],
     ['', '', '', '骁龙675', '骁龙821', '', 'Helio X30', '', '', '', 'Tegra K1'],
     ['', '', '', '骁龙670', '骁龙820', '', '', '', 'A8X', '', ''],
     ['', '', '', '', '骁龙820降频版', 'Exynos 8890', '', '', '', '', ''],
@@ -95,21 +95,21 @@ try {
     // console.log(tbody);
     tbody.insertAdjacentHTML('beforeend', newcpuData)
     // 背景高亮
-    const specialCPU = ['骁龙439', '骁龙765', '骁龙665','Helio G90T']
-    const Unlisted = ['天玑1000', '骁龙865']
-    var content = document.querySelectorAll('td.content')
-    for (var key of content) {
-        specialCPU.forEach(v => {
-            if (key.textContent.includes(v)) {
-                key.classList.add('newCpu')
-            }
-        })
-        Unlisted.forEach(v => {
-            if (key.textContent.includes(v)) {
-                key.classList.add('unlisted')
-            }
-        })
-    }
+    // const specialCPU = ['骁龙439', '骁龙765', '骁龙665','Helio G90T']
+    // const Unlisted = ['天玑1000', '骁龙865']
+    // var content = document.querySelectorAll('td.content')
+    // for (var key of content) {
+    //     specialCPU.forEach(v => {
+    //         if (key.textContent.includes(v)) {
+    //             key.classList.add('newCpu')
+    //         }
+    //     })
+    //     Unlisted.forEach(v => {
+    //         if (key.textContent.includes(v)) {
+    //             key.classList.add('unlisted')
+    //         }
+    //     })
+    // }
 } catch (error) {
     alert(error)
 }
