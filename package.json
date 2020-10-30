@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/taxilng/baseCode/issues"
   },
-  "homepage": "https://github.com/taxilng/baseCode#readme",
+  "homepage": "https://taxilng.github.io/Mobile_CPU_Ladder_Diagram/dist/index.html",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
