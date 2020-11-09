@@ -121,3 +121,12 @@ a:ative {
 .footer {
     padding: 20px;
 }
+.cpu_target {
+    font-size: 20px;
+    margin-left: 10px;
+    color: #5151a2;
+    
+}
+.cpu_target:visited {
+    color: #5151a2;
+}
