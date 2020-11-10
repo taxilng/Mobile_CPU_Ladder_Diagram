@@ -122,8 +122,9 @@ a:ative {
     padding: 20px;
 }
 .cpu_target {
+    display: inline-block;
     font-size: 20px;
-    margin-left: 10px;
+    margin: 10px;
     color: #5151a2;
     
 }
