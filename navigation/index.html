@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>导航</title>
+    <style>
+      body {
+        margin: 0 auto;
+      }
+      .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      ul {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      a,
+      a:hover,
+      a:active,
+      a:visited,
+      a:link,
+      a:focus {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+        background: none;
+        text-decoration: none;
+      }
+      a,
+      li {
+        width: 100px;
+        list-style: none;
+        /* margin-right: 50px; */
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      li:hover {
+        background: rgba(33, 32, 36, 0.06);
+        border-radius: 4px;
+      }
+      a {
+        text-decoration: none;
+        color: rgba(33, 32, 36, 0.86);
+      }
+      img {
+        max-width: 100px;
+        max-height: 100px;
+      }
+      .web-icon {
+        width: 70px;
+        height: 70px;
+        background-color: #f1f3f4;
+        border-radius: 50%;
+        text-align: center;
+        margin: auto;
+      }
+      .web-img {
+        width: 50%;
+        top: 50%;
+        position: relative;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h2>网址导航</h2>
+      <ul>
+        <li>
+          <a target="_blank" href="http://39.100.236.137/">
+            <div class="web-icon">
+              <img class="web-img" src="./images/1.jpg" />
+            </div>
+            <div>手机天梯图</div>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="http://39.100.236.137:82/">
+            <div class="web-icon">
+              <img class="web-img" src="./images/2.jpg" />
+            </div>
+            <div>原神</div>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="http://39.100.236.137:81/">
+            <div class="web-icon">
+              <img class="web-img" src="./images/3.jpg" />
+            </div>
+            <div>基金</div>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="http://39.100.236.137/desktop_cpu.html">
+            <div class="web-icon">
+              <img class="web-img" src="./images/4.jpg" />
+            </div>
+            <div>桌面CPU</div>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="http://39.100.236.137/desktop_gpu.html">
+            <div class="web-icon">
+              <img class="web-img" src="./images/5.jpg" />
+            </div>
+            <div>桌面GPU</div>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="http://39.100.236.137/desktop_mcpu.html">
+            <div class="web-icon">
+              <img class="web-img" src="./images/6.jpg" />
+            </div>
+            <div>笔记本CPU</div>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="http://39.100.236.137/desktop_mgpu.html">
+            <div class="web-icon">
+              <img class="web-img" src="./images/7.jpg" />
+            </div>
+            <div>笔记本GPU</div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
