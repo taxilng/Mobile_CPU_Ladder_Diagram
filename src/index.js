@@ -113,6 +113,24 @@ try {
         //     }
         // })
     }
+    tbody.addEventListener('click', function (e) {
+        console.log('hah', e.target);
+        console.log('hah', e.target.innerText);
+        try {
+            var txt = e.target.innerText
+            if(txt.includes('骁龙') || txt.includes('MSM')) {
+                window.open('https://www.mydrivers.com/zhuanti/tianti/01/index_gaotong.html')
+            } else if(txt.includes('Exynos')) {
+                window.open('https://www.mydrivers.com/zhuanti/tianti/01/index_other.html#samsung')
+            } else if(txt.includes('麒麟')) {
+                window.open('https://www.mydrivers.com/zhuanti/tianti/01/index_other.html#huawei')
+            } else if(txt.includes('A')) {
+                window.open('https://www.mydrivers.com/zhuanti/tianti/01/index_other.html#apple')
+            }
+        } catch (error) {
+            
+        }
+    })
 } catch (error) {
     alert(error)
 }
