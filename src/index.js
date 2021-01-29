@@ -113,7 +113,7 @@ try {
         //     }
         // })
     }
-    tbody.addEventListener('click', function (e) {
+    tbody.addEventListener('dblclick', function (e) {
         console.log('hah', e);
         console.log('hah', e.target.innerText);
         try {
