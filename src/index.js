@@ -114,7 +114,7 @@ try {
         // })
     }
     tbody.addEventListener('click', function (e) {
-        console.log('hah', e.target);
+        console.log('hah', e);
         console.log('hah', e.target.innerText);
         try {
             var txt = e.target.innerText
@@ -124,6 +124,8 @@ try {
                 window.open('https://www.mydrivers.com/zhuanti/tianti/01/index_other.html#samsung')
             } else if(txt.includes('麒麟')) {
                 window.open('https://www.mydrivers.com/zhuanti/tianti/01/index_other.html#huawei')
+            } else if(txt.includes('天玑') || txt.includes('Helio') || txt.includes('MT')) {
+                window.open('https://www.mydrivers.com/zhuanti/tianti/01/index_other.html#mediatek')
             } else if(txt.includes('A')) {
                 window.open('https://www.mydrivers.com/zhuanti/tianti/01/index_other.html#apple')
             }
