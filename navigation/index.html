@@ -66,6 +66,13 @@
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
       }
+      .totalVisits {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 12px;
+      }
     </style>
   </head>
   <body>
@@ -130,5 +137,12 @@
         </li>
       </ul>
     </div>
+    <div class="totalVisits">
+      <span>总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+    </div>
   </body>
+  <script
+    async
+    src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
+  ></script>
 </html>
