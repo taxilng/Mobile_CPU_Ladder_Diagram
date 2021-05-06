@@ -98,8 +98,7 @@ try {
     // console.log(tbody);
     tbody.insertAdjacentHTML('beforeend', newcpuData)
     // 背景高亮
-    const specialCPU = ['天玑1100', '麒麟9000', '骁龙888','/870','骁龙480','天玑1200', 'Exynos 1080']
-    // const Unlisted = ['天玑1000', '骁龙865']
+    const specialCPU = ['天玑700', '骁龙780']
     var content = document.querySelectorAll('td.content')
     for (var key of content) {
         specialCPU.forEach(v => {
