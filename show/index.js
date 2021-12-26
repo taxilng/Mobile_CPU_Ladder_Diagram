@@ -72,28 +72,42 @@ var cpuData = [
     ['', '', '', '', '', '', 'MT6516', '', '', '', '']
 ]
 try {
-    var newcpuData = cpuData
-        .map((v) =>
-            v.map((x, i, arr) => {
-                var temp = ``
-                if (i === 0) {
-                    temp = `<tr><td class="content">${x}</td>`
-                } else if (i === arr.length - 1) {
-                    temp = `<td class="content">${x}</td></tr>`
-                } else {
-                    temp = `<td class="content">${x}</td>`
-                }
-                return temp
-            })
-        )
-        .flat()
-        .join('')
+    // var newcpuData = cpuData
+    //     .map((v) =>
+    //         v.map((x, i, arr) => {
+    //             var temp = ``
+    //             if (i === 0) {
+    //                 temp = `<tr><td class="content">${x}</td>`
+    //             } else if (i === arr.length - 1) {
+    //                 temp = `<td class="content">${x}</td></tr>`
+    //             } else {
+    //                 temp = `<td class="content">${x}</td>`
+    //             }
+    //             return temp
+    //         })
+    //     )
+    //     .flat()
+    //     .join('')
+    var newcpuData = ''
+    cpuData.forEach((v) => {
+        v.forEach((x, i, arr) => {
+            var temp = ``
+            if (i === 0) {
+                temp = `<tr><td class="content">${x}</td>`
+            } else if (i === arr.length - 1) {
+                temp = `<td class="content">${x}</td></tr>`
+            } else {
+                temp = `<td class="content">${x}</td>`
+            }
+            newcpuData += temp
+        })
+    })
     // console.log(newcpuData);
     var tbody = document.querySelector('#tbody')
     // console.log(tbody);
     tbody.insertAdjacentHTML('beforeend', newcpuData)
     // 背景高亮
-    const specialCPU = ['天玑920','M1','A15','天玑810',]
+    const specialCPU = ['天玑920', 'M1', 'A15', '天玑810',]
     var content = document.querySelectorAll('td.content')
     for (var key of content) {
         specialCPU.forEach(v => {
@@ -112,19 +126,19 @@ try {
         console.log('hah', e.target.innerText);
         try {
             var txt = e.target.innerText
-            if(txt.includes('骁龙') || txt.includes('MSM')) {
+            if (txt.includes('骁龙') || txt.includes('MSM')) {
                 window.open('https://www.mydrivers.com/zhuanti/tianti/01/index_gaotong.html')
-            } else if(txt.includes('Exynos')) {
+            } else if (txt.includes('Exynos')) {
                 window.open('https://www.mydrivers.com/zhuanti/tianti/01/index_other.html#samsung')
-            } else if(txt.includes('麒麟')) {
+            } else if (txt.includes('麒麟')) {
                 window.open('https://www.mydrivers.com/zhuanti/tianti/01/index_other.html#huawei')
-            } else if(txt.includes('天玑') || txt.includes('Helio') || txt.includes('MT')) {
+            } else if (txt.includes('天玑') || txt.includes('Helio') || txt.includes('MT')) {
                 window.open('https://www.mydrivers.com/zhuanti/tianti/01/index_other.html#mediatek')
-            } else if(txt.includes('A')) {
+            } else if (txt.includes('A')) {
                 window.open('https://www.mydrivers.com/zhuanti/tianti/01/index_other.html#apple')
             }
         } catch (error) {
-            
+
         }
     })
 } catch (error) {
