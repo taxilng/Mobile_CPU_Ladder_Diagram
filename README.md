@@ -2,8 +2,7 @@
 
 ## 包括了 桌面处理器，桌面显卡，移动端处理器，移动端显卡的天梯图，最下方链接
 
-[gitee page](http://taxilng.gitee.io/mobile_cpu_ladder_diagram/)
-[github page](https://taxilng.github.io/Mobile_CPU_Ladder_Diagram/)
+[Github Page](https://taxilng.github.io/Mobile_CPU_Ladder_Diagram/)
 
 ## 项目启动
 
