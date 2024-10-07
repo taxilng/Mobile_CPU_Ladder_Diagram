@@ -28,7 +28,7 @@ fs.readdir(inputFolder, (err, files) => {
 
         // 使用 sharp 进行转换
         sharp(inputFilePath)
-            .webp()
+            .webp({ quality: 50 })
             .toFile(outputFilePath, (err, info) => {
                 if (err) {
                     console.error(`转换文件 ${file} 失败:`, err);
