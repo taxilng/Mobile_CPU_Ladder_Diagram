@@ -2,21 +2,10 @@
 
 ## 包括了 桌面处理器，桌面显卡，移动端处理器，移动端显卡的天梯图，最下方链接
 
+## 访问链接地址
 [Github Page](https://taxilng.github.io/Mobile_CPU_Ladder_Diagram/)
-
-## 项目启动
-
-```bash
-#安装依赖
-yarn
-
-#项目运行
-yarn dev
-
-#项目打包
-yarn build
-
-```
+[netlify Page](https://mobile-cpu-ladder-diagram.netlify.app/)
+[Cloudflare Page](https://mobile-cpu-ladder-diagram.pages.dev/)
 
 ## 更新日志
 
