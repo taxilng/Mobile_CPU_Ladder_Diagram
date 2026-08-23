@@ -3,6 +3,7 @@
 ## 包括了 桌面处理器，桌面显卡，移动端处理器，移动端显卡的天梯图，最下方链接
 
 ## 访问链接地址
+
 [Github Page](https://taxilng.github.io/Mobile_CPU_Ladder_Diagram/)
 
 [netlify Page](https://mobile-cpu-ladder-diagram.netlify.app/)
@@ -12,6 +13,11 @@
 ## 更新日志
 
 ---
+
+### 2026.08.21
+
+- feat: 增加天玑9500M，天玑7500，天玑7360，骁龙6Gen5，骁龙4Gen5，骁龙4Gen4，虎贲T7225，虎贲T8300
+- chore: 调整骁龙8Gen5芯片的排版位置
 
 ### 2026.04.26
 
